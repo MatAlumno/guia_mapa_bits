@@ -4,20 +4,21 @@ import os
 ruta_imagen = input("Ingrese la ruta de la imagen: ")
 
 if os.path.isfile(ruta_imagen):
-    nerdImg = Image.open(ruta_imagen)
-    width, height = nerdImg.size
+    Img = Image.open(ruta_imagen)
+    
+    width, height = Img.size
     print('_____________________________________________')
-    print(f'nombre      |   {nerdImg.filename.split('\\')[-1]}')
+    print(f'nombre      |   {Img.filename.split('\\')[-1]}')
     print('_____________________________________________')
-    print(f'extension   |   {nerdImg.format}')
+    print(f'extension   |   {Img.format}')
     print('_____________________________________________')
-    print(f'resulucion  |   {nerdImg.size}')
+    print(f'resulucion  |   {Img.size}')
     print('_____________________________________________')
     print(f'pixeles     |   {width * height}')
     print('_____________________________________________')
-    print(f'ruta        |   {nerdImg.filename}')
+    print(f'ruta        |   {Img.filename}')
     print('_____________________________________________')
-    # Muestra la imagen
-    nerdImg.show()
+
+    Img.show()
 else:
-    print("La ruta ingresada no es válida o el archivo no existe.")ñ
+    print("La ruta no es valida")
