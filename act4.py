@@ -1,6 +1,6 @@
 from PIL import Image
 
-img = Image.open('pwnitent.jpg')
+img = Image.open('penitent.jpg')
 width, height = img.size
 
 print(width, height)
