@@ -2,8 +2,8 @@ from PIL import Image
 import os
 
 ruta_imagen = input("Ingrese la ruta de la imagen: ")
-while not os.path.isfile(ruta_carpeta):
-    ruta_carpeta = input("La ruta es incorrecta, reingresela: ")
+while not os.path.isfile(ruta_imagen):
+    ruta_imagen = input("La ruta es incorrecta, reingresela: ")
 
 Img = Image.open(ruta_imagen)
     
