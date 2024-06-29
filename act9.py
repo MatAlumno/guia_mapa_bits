@@ -2,8 +2,8 @@ from PIL import Image
 import os
 
 def pixel(x1,y1,color):
-    for y in range(y1, y1+pix):
-        for x in range(x1, x1+pix):
+    for y in range(y1, min(y1+pix, height)):
+        for x in range(x1, min(x1+pix, width)):
             img.putpixel((x,y),color)
 
 ruta_imagen = input("Ingrese la ruta de la imagen: ")
